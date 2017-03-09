@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+        Gallery Page
+    </title>
+   <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    </head>
+    <body class="wrapper">
+        <header>
+            
+            <div class="main-header ">
+                 <input type="button" value="Log Out" class="logout" onclick="logout()">
+                <h1 class="main-heading" id="main-heading">
+                    Product Gallery
+                </h1>
+                 
+                <img src="img/logo.png" alt="logo">
+                <p>Click <a href="grid.html" target="_blank">Here</a> For Grid View</p>
+            
+            <nav class="nav-container">
+                
+                        <ul>
+                        <a href="home.html"><li>Home</li></a>
+                        <a href="AboutUs.html"><li>About Us</li></a>
+                        <a href="ContactUs.html"><li>Contact Us</li></a>
+                        <a href="gallery.html"><li>Gallery</li></a>
+                    </ul>
+            </nav>
+            
+            </div>
+            
+        </header>
+        <section class="wrapper">
+            
+             <aside class="left-sidebar">
+                 <div id="tabs">
+                     <ul>
+                    <li class="img-single" id="product1">
+                        <a href="#tabpanel1"><img src="img/worm1.PNG" alt="#" ></a>
+                    </li>
+                    <li class="img-single" id="product2">
+                        <a href="#tabpanel2" onclick="toggle_visibility('product2')"><img src="img/worm2.PNG" alt="#"></a>
+                    </li>
+                    <li class="img-single" id="product3">
+                        <a href="#tabpanel3" onclick="toggle_visibility('product3')"><img src="img/worm3.PNG" alt="#"></a>
+                    </li>
+                    <li class="img-single" id="product4">
+                        <a href="#tabpanel4" onclick="toggle_visibility('product4')"><img src="img/worm4.PNG" alt="#"></a>
+                    </li>
+                    <li class="img-single" id="product5">
+                        <a href="#tabpanel5" onclick="toggle_visibility('product8')"><img src="img/worm8.PNG" alt="#"></a>
+                    </li>
+                    <li class="img-single" id="product6">
+                        <a href="#tabpanel6" onclick="toggle_visibility('product6')"><img src="img/worm6.PNG" alt="#"></a>
+                    </li>
+                    <li class="img-single" id="product7">
+                        <a href="#tabpanel7" onclick="toggle_visibility('product7')"><img src="img/worm7.PNG" alt="#"></a>
+                    </li>
+                    <li class="img-single" id="product8">
+                        <a href="#tabpanel8" onclick="toggle_visibility('product9')"><img src="img/worm9.PNG" alt="#"></a>
+                    </li>
+                    <li class="img-single" id="product9">
+                        <a href="#tabpanel9" onclick="toggle_visibility('product10')"><img src="img/worm10.PNG" alt="#"></a>
+                    </li>
+                    <li class="img-single" id="product10">
+                        <a href="#tabpanel10" onclick="toggle_visibility('product11')"><img src="img/worm11.PNG" alt="#"></a>
+                        </li>
+                         
+                        </ul>
+                 
+                     </div>
+
+                 </aside>
+                            
+
+             <aside class="right-sidebar">
+                 <div id="containers" class="rightcontainer">
+                        <!-- include a heading (H1) and a brief description of the
+                            product and price. -->
+                 <div id="productpanel1" class="productpanel">
+                     <img src="img/worm1.PNG" class="productimg" alt="worm1">
+                     <h2>10" Berkley Power Worm</h2>
+                     <h3>Price: 45 &cent; / worm</h3>
+                     <p> With its wide range of uses and subtle natural action, the Berkley Power Worm has quickly become a favorite with anglers all over the world. The beauty of the Power Worm is in it's simplicity. The Berkley Power Worm may just look like a thick round plastic worm but the fall rate created from the large amount of salt impregnated in the body drives fish mad. When rigged weightless the Berkley Power Worm falls horizontally with a seductive side to side tail action. Try wacky rigging or texas rigging the Berkley Power Worm and experience the versatility and effectiveness it provides.</p><br>
+                 </div>
+                 <div id="productpanel2" class="productpanel">
+                     <img src="img/worm2.PNG" class="productimg" alt="worm2">
+                      <h2>7" Berkly Sicle Tail Worm</h2>
+                     <h3>Price: 35 &cent; / worm</h3>
+                     <p>Building upon this outstanding line of soft plastics, the 7" Berkly Sicle Tail Worm delivers a unique and appetizing action that bass cannot resist. Built with a specially designed spade tail, the 7" Berkly Sicle Tail Worm moves a great deal of water and comes-to-life on a darter head, neko-rig, and wacky-rig. Available in a number of fish-catching colors, the 7" Berkly Sicle Tail Worm delivers a one-of-a-kind presentation that is sure to give your "bank-roll" a boost.</p><br>
+                 </div>
+                 <div id="productpanel3" class="productpanel">
+                     <img src="img/worm3.PNG" class="productimg" alt="worm3">
+                     <h2>6" Berkley Power Worm</h2>
+                     <h3>Price: 25 &cent; / worm</h3>
+                     <p>Sometimes when you need to catch that kicker fish, you need a bigger bait for the job. Introducing the new 6" Berkley Power Worm. Its added length and long curly tail deliver an amazing action perfect for fishing ledges or anywhere else big fish live, while also providing the size to weed out the little ones. Poured to perfection, you can fish it on a Texas-rig, Carolina-rig or even weightless. Available in a variety of colors, the 6" Berkley Power Worm has what it takes to put the big ones in the boat.</p><br>
+                 </div>
+                 <div id="productpanel4" class="productpanel">
+                     <img src="img/worm4.PNG" class="productimg" alt="worm4">
+                      <h2>4" Berkley Finesse</h2>
+                     <h3>Price: 15 &cent; / worm</h3>
+                     <p>Enhanced with BANG Fish Attractant, the 4" Berkley Finesse Worm deliver the proven floating worm action that bass can’t resist - now with the added benefit of natural scent that draws fish in and makes them hold on longer. Texas-rig the Tapout Worms and skip them under docks and over hangs, fish them on a drop shot, wacky rig the, or even Carolina-rig them, the 4" Berkley Finesse Worm.</p><br>
+                 </div>
+                 <div id="productpanel5" class="productpanel">
+                     <img src="img/worm8.PNG" class="productimg" alt="worm5">
+                      <h2>6" Straight Worm</h2>
+                     <h3>Price: 25 &cent; / worm</h3>
+                     <p>The Straight Tail Worms have become a staple for finesse fishing, harkening back to the days of the 'hand poured' finesse worms so popular on the West Coast more than a decade ago. The Straight Tail Worms are surprisingly effective, especially during the warmer months when fish pressure and boat traffic are at their peak. Using state-of-the-art robotic technology to create consistent, well-defined colors every time. It also allows them to create unique color combinations, usually only found in 'hand poured' worms. The super soft plastic Strait Tail Worms end up having a very sensitive, alluring action complete with a Salt Release System that provides a burst of salt when a fish bites ' causing them to hold on longer for solid hooksets.</p><br>
+                 </div>
+                 <div id="productpanel6" class="productpanel">
+                     <img src="img/worm6.PNG" class="productimg" alt="worm6">
+                      <h2>2" Berkley Power Gulp Sandworm</h2>
+                     <h3>Price: 25 &cent; / worm</h3>
+                     <p>Ideal for a wide-range of applications, the Berkley Gulp 2” Sandworm delivers a look, taste, and action that appeals to all fish. Ingenious in its simplicity, the Berkley Gulp 2” Sandworm represents a wide-range of forage and is infused with Berkley’s universally effective GULP! scenting. Perfect for drop shots, Carolina-rigs, and small jig heads, the Berkley Gulp 2” Sandworm delivers a tried-and-true attraction that is sure to keep your lines tight, whether your are fishing in fresh or saltwater. </p><br>
+                 </div>
+                 <div id="productpanel7" class="productpanel">
+                     <img src="img/worm7.PNG" class="productimg" alt="worm7">
+                      <h2>6" Green Weenie</h2>
+                     <h3>Price: 25 &cent; / worm</h3>
+                     <p>The Straight Tail Worms have become a staple for finesse fishing, harkening back to the days of the 'hand poured' finesse worms so popular on the West Coast more than a decade ago. The Straight Tail Worms are surprisingly effective, especially during the warmer months when fish pressure and boat traffic are at their peak. Using state-of-the-art robotic technology to create consistent, well-defined colors every time. It also allows them to create unique color combinations, usually only found in 'hand poured' worms. The super soft plastic Strait Tail Worms end up having a very sensitive, alluring action complete with a Salt Release System that provides a burst of salt when a fish bites ' causing them to hold on longer for solid hooksets.</p><br>
+                 </div>
+                 <div id="productpanel8" class="productpanel">
+                     <img src="img/worm9.PNG" class="productimg" alt="worm8">
+                     <h2>6" Salt and Pepper Blue</h2>
+                     <h3>Price: 25 &cent; / worm</h3>
+                     <p>The Straight Tail Worms have become a staple for finesse fishing, harkening back to the days of the 'hand poured' finesse worms so popular on the West Coast more than a decade ago. The Straight Tail Worms are surprisingly effective, especially during the warmer months when fish pressure and boat traffic are at their peak. Using state-of-the-art robotic technology to create consistent, well-defined colors every time. It also allows them to create unique color combinations, usually only found in 'hand poured' worms. The super soft plastic Strait Tail Worms end up having a very sensitive, alluring action complete with a Salt Release System that provides a burst of salt when a fish bites ' causing them to hold on longer for solid hooksets.</p><br>
+                 </div>
+                 <div id="productpanel9" class="productpanel">
+                     <img src="img/worm10.PNG" class="productimg" alt="worm9">
+                     <h2>6" Red & Green Flake Weenie w/ Chartreuse Tail</h2>
+                     <h3>Price: 25 &cent; / worm</h3>
+                     <p>The Straight Tail Worms have become a staple for finesse fishing, harkening back to the days of the 'hand poured' finesse worms so popular on the West Coast more than a decade ago. The Straight Tail Worms are surprisingly effective, especially during the warmer months when fish pressure and boat traffic are at their peak. Using state-of-the-art robotic technology to create consistent, well-defined colors every time. It also allows them to create unique color combinations, usually only found in 'hand poured' worms. The super soft plastic Strait Tail Worms end up having a very sensitive, alluring action complete with a Salt Release System that provides a burst of salt when a fish bites ' causing them to hold on longer for solid hooksets.</p><br>
+                 </div>
+                 <div id="productpanel10" class="productpanel">
+                     <img src="img/worm11.PNG" class="productimg" alt="worm10">
+                      <h2>6" Salt & Pepper Purple</h2>
+                     <h3>Price: 25 &cent; / worm</h3>
+                     <p>The Straight Tail Worms have become a staple for finesse fishing, harkening back to the days of the 'hand poured' finesse worms so popular on the West Coast more than a decade ago. The Straight Tail Worms are surprisingly effective, especially during the warmer months when fish pressure and boat traffic are at their peak. Using state-of-the-art robotic technology to create consistent, well-defined colors every time. It also allows them to create unique color combinations, usually only found in 'hand poured' worms. The super soft plastic Strait Tail Worms end up having a very sensitive, alluring action complete with a Salt Release System that provides a burst of salt when a fish bites ' causing them to hold on longer for solid hooksets.</p><br>
+                 </div>
+                 </div>
+                    </aside>
+            
+            
+        </section>
+            <div class="wrapper">
+        <footer class="bottom-footer">
+            <h3>&copy; Created by Kevin Danny</h3>
+        </footer>
+            </div>
+<script type="text/javascript">
+//tabbed panels
+
+// declare globals to hold all the links and all the panel elements
+var tabLinks;
+var tabPanels;
+
+window.onload=function() {
+        // when the page loads, grab the li elements
+        tabLinks = document.getElementById("tabs").getElementsByTagName("li");
+    // Now get all the tab panel container divs
+    tabPanels = document.getElementById("containers").getElementsByTagName("div");
+
+    // activate the _first_ one
+        displayPanel(tabLinks[0]);
+
+        // attach event listener to links using onclick and onfocus, fire the displayPanel function, return false to disable the link
+        for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].onclick = function() {
+            displayPanel(this);
+            return false;
+        }
+                tabLinks[i].onfocus = function() {
+            displayPanel(this);
+            return false;
+        }
+        }
+}
+
+function displayPanel(tabToActivate) {
+        // go through all the <li> elements
+        for (var i = 0; i < tabLinks.length; i++) {
+                if (tabLinks[i] == tabToActivate) {
+            // if it's the one to activate, change its class
+                        tabLinks[i].classList.add("active");
+            // and display the corresponding panel
+            tabPanels[i].style.display = "block";
+            document.getElementById('main-heading').scrollIntoView();
+           
+                } else {
+            // remove the active class on the link
+                    tabLinks[i].classList.remove("active");
+            // hide the panel
+            tabPanels[i].style.display = "none";
+                }
+    }
+}
+  function logout(){
+                 alert ("Logout Sucessful");
+        window.location = "login.html";
+            }
+</script>
+    </body>
+    </html>

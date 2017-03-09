@@ -1,0 +1,75 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width" />
+        <title>Keeper Worms Login</title>
+       <link rel="stylesheet" type="text/css" href="css/login.css">
+    </head>
+    <body>
+        <div class="wrapper">
+        <header>
+            <h1 class="main-header box-shadow">Keeper Custom Worms</h1>
+            </header>
+        </div>
+        <article class="content-bottom-art bg-image">
+            <section class="content-bottom-sec">
+                <form class="login box-shadow">
+                <h2>Login</h2>
+                    <div>
+                  
+                        <input type="text" for="username"
+                        placeholder="Username"
+                        class="login-input" id="username" tabindex="1">
+                        <input type="password" for="password"
+                        placeholder="Password"  class="login-input" id="password" tabindex="2">
+                        <input type="button" value="Login" id="submit" onclick="login()" tabindex="3"/>
+                        <input type="button" value="Hint" id="hint" onclick="hint()" tabindex="4"/>
+                    </div>
+                    <div class="messages-box">
+                    <p class="error-message" id="error-msg">"You have left <a id="attempts"></a> attempts until you are locked out."</p>
+                    <p class="hint-message" id="hint-msg">Username: Kevin
+                        Password: Danny</p>
+                        
+                    </div>
+                </form>
+            
+            </section>
+        </article>
+        <footer class="footer">
+       <p class="copyright box-shadow"> &copy; Created By Kevin Danny</p>
+        </footer>
+        <script>
+            var attempt = 3; // Variable to count number of attempts.
+        // Below function Executes on click of login button.
+            
+        function login(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+        if ( username == "Kevin" && password == "Danny"){
+        alert ("Login successful");
+        window.location = "home.html"; // Redirecting to other page.
+        return false;
+            }
+        else{
+            attempt --;// Decrementing by one.
+            document.getElementById("error-msg").style.display='block';
+            document.getElementById("attempts").innerHTML = attempt;
+            
+            // Disabling fields after 3 attempts.
+        if( attempt == 0){
+        document.getElementById("username").disabled = true;
+        document.getElementById("password").disabled = true;
+        document.getElementById("submit").disabled = true;
+        return false;
+}
+}
+}
+
+        function hint() {
+           
+            document.getElementById("hint-msg").style.display='block';
+        }
+         document.getElementById("hint").onclick=function(){hint();};
+        </script>
+    </body>
+</html>
